@@ -1,0 +1,131 @@
+{
+  "pageName": "Dashboard_Overview",
+  "capturedAt": "2025-04-09T10:30:00.000Z",
+  "url": "https://example.com/dashboard",
+  "elementCount": 3,
+  "elements": [
+    {
+      "locatorName": "Patient_Name_Input",
+      "element": {
+        "tag": "input",
+        "type": "text",
+        "text": null,
+        "isVisible": true,
+        "isDisabled": false,
+        "positionInParent": 2,
+        "boundingBox": { "x": 120, "y": 240, "width": 320, "height": 40 },
+        "computedRole": "textbox"
+      },
+      "attributes": {
+        "type": "text",
+        "name": "patient_name",
+        "id": "patientNameField",
+        "placeholder": "Patient Name",
+        "class": "form-control input-lg",
+        "autocomplete": "off",
+        "aria-required": "true",
+        "data-testid": "patient-name-input",
+        "maxlength": "100"
+      },
+      "locators": [
+        { "type": "ID",        "value": "#patientNameField" },
+        { "type": "CSS",       "value": "#patientNameField" },
+        { "type": "XPath",     "value": "//input[@id=\"patientNameField\"]" },
+        { "type": "XPath_Abs", "value": "/html/body/div[2]/main/form/div[1]/input" },
+        { "type": "TestID",    "value": "[data-testid=\"patient-name-input\"]" },
+        { "type": "Name",      "value": "[name=\"patient_name\"]" }
+      ],
+      "parent": {
+        "tag": "div",
+        "id": null,
+        "classes": ["form-group", "mb-3"],
+        "xpath": "//div[contains(@class,\"form-group\")]",
+        "css": "form > div.form-group.mb-3:nth-of-type(1)"
+      },
+      "siblings": {
+        "previous": {
+          "tag": "label",
+          "id": null,
+          "classes": ["form-label"],
+          "text": "Patient Name",
+          "xpath": "//label[normalize-space()=\"Patient Name\"]"
+        },
+        "next": {
+          "tag": "div",
+          "id": null,
+          "classes": ["invalid-feedback"],
+          "text": "Please enter patient name",
+          "xpath": "//div[contains(@class,\"invalid-feedback\")]"
+        }
+      },
+      "children": [],
+      "styles": {
+        "display": "block",
+        "visibility": "visible",
+        "cursor": "text",
+        "color": "rgb(33, 37, 41)",
+        "background": "rgb(255, 255, 255)",
+        "fontSize": "16px",
+        "fontWeight": "400"
+      }
+    },
+    {
+      "locatorName": "Submit_Button",
+      "element": {
+        "tag": "button",
+        "type": "submit",
+        "text": "Save Patient",
+        "isVisible": true,
+        "isDisabled": false,
+        "positionInParent": 4,
+        "boundingBox": { "x": 120, "y": 420, "width": 140, "height": 44 },
+        "computedRole": "button"
+      },
+      "attributes": {
+        "type": "submit",
+        "id": "savePatientBtn",
+        "class": "btn btn-primary",
+        "data-testid": "save-patient-btn",
+        "aria-label": "Save patient record"
+      },
+      "locators": [
+        { "type": "ID",        "value": "#savePatientBtn" },
+        { "type": "CSS",       "value": "#savePatientBtn" },
+        { "type": "XPath",     "value": "//button[@id=\"savePatientBtn\"]" },
+        { "type": "XPath_Abs", "value": "/html/body/div[2]/main/form/button" },
+        { "type": "TestID",    "value": "[data-testid=\"save-patient-btn\"]" },
+        { "type": "AriaLabel", "value": "[aria-label=\"Save patient record\"]" },
+        { "type": "Text",      "value": "Save Patient" }
+      ],
+      "parent": {
+        "tag": "form",
+        "id": "patientForm",
+        "classes": ["patient-registration-form"],
+        "xpath": "//form[@id=\"patientForm\"]",
+        "css": "#patientForm"
+      },
+      "siblings": {
+        "previous": {
+          "tag": "div",
+          "id": null,
+          "classes": ["form-group"],
+          "text": "Notes",
+          "xpath": "//div[contains(@class,\"form-group\")][4]"
+        },
+        "next": null
+      },
+      "children": [
+        { "tag": "span", "id": null, "classes": ["btn-text"], "text": "Save Patient" }
+      ],
+      "styles": {
+        "display": "inline-block",
+        "visibility": "visible",
+        "cursor": "pointer",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(13, 110, 253)",
+        "fontSize": "16px",
+        "fontWeight": "400"
+      }
+    }
+  ]
+}
